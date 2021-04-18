@@ -2,4 +2,4 @@
 
 
 
-[Scenario](/blob/main/docs/SCENARIO.md)
+[Scenario](/docs/SCENARIO.md)
