@@ -1,2 +1,5 @@
 # SchoolSystem
-Our Software Lab Project
+
+
+
+[Scenario](/blob/main/docs/SCENARIO.md)
