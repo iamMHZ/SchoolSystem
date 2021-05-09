@@ -26,7 +26,7 @@ answer homeworks.
 
 ### Project Scenario and Requirements :
 
-+ [Project scenario](/docs/SCENARIO.md)
++ [Project scenario in Persian Language](/documentation/scenarios/SCENARIO.md)
 
 ### Analysis and Design:
 
