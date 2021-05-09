@@ -1,2 +1,2 @@
 ### Related links:
- + [Persian scenario](/scenarios/SCENARIO.md)
+ + [Persian scenario](scenarios/SCENARIO.md)
