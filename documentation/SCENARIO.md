@@ -22,7 +22,9 @@
 
 #### سناریوها:
  
+[سناریو معلم ](TEACHER_SCENARIO.md/)
 
+[سناریو دانش اموز ](STUDENT_SCENARIO.md/)
 
 
 
