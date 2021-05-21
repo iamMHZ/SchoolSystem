@@ -21,6 +21,8 @@ answer homeworks.
 ### Non-Functional Requirements:
 
 + Can be run on the Windows and Linux(ubuntu)
++ Must receive updated data in less than 10 minutes
++ Must be fast in interactions with users(normally less than 60 seconds)
 
 ## Project Documents:
 
