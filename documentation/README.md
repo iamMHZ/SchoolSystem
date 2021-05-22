@@ -1,3 +1,3 @@
 ### Related links:
  + [Scenario](scenarios/SCENARIO.md)
- + [Use Case Diagram]("use case diagram/")
+ + [Use Case Diagram](use%20case%20diagram/)
