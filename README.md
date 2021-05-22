@@ -1,8 +1,8 @@
 # School System Management Project
 
 This project aims to implement some phases of a school management system with focuses on the news and assignments parts.
-It enables the teachers to send news and assignments to their students and then students can also view news and
-answer homeworks.
+It enables the teachers to send news and assignments to their students and then students can also view news and answer
+homeworks.
 
 ## Technical details:
 
@@ -34,7 +34,7 @@ answer homeworks.
 
 + [Use case Diagram](documentation/use%20case%20diagram/)
 + Activity Diagram [coming soon](#)
-+ [Class Diagram](#)
++ [Class Diagram](documentation/class%20diagram/)
 + Sequence Diagram [coming soon](#)
 + ER Diagram [coming soon](#)
 
