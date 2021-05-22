@@ -33,15 +33,15 @@ answer homeworks.
 ### Analysis and Design:
 
 + [Use case Diagram](documentation/use%20case%20diagram/)
-+ [Activity Diagram](#)
++ Activity Diagram [coming soon](#)
 + [Class Diagram](#)
-+ [Sequence Diagram](#)
-+ [ER Diagram](#)
++ Sequence Diagram [coming soon](#)
++ ER Diagram [coming soon](#)
 
 ### Project Management:
 
-+ [Docs of the project phasing](#)
-+ [Docs of the project timing](#)
++ Docs of the project phasing [coming soon](#)
++ Docs of the project timing [coming soon](#)
 
 ## Developers
 
