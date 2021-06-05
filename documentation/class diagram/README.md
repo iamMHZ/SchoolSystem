@@ -1,3 +1,3 @@
 ### Class Diagram
 
-![class diagram](class%20diagram.png)
+![class diagram](1.png)
