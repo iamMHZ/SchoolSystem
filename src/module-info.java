@@ -8,4 +8,5 @@ module SchoolSystem {
 
 
     opens testJavaFX;
+    opens database.playground;
 }
