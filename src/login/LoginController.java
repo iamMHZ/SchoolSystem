@@ -1,7 +1,6 @@
 package login;
 
-import animatefx.animation.FadeIn;
-import animatefx.animation.Shake;
+import animatefx.animation.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -27,7 +26,7 @@ public class LoginController {
     @FXML
     void OnMouseEntered(MouseEvent event) {
         if (event.getSource() == changeToSignInBtn) {
-            new Shake(changeToSignInBtn).play();
+            new RubberBand(changeToSignInBtn).play();
 
         }
 
