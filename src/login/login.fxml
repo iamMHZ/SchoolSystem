@@ -37,7 +37,7 @@
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
                         </TextField>
-                        <Button fx:id="signInBtn" mnemonicParsing="false" text="Sign Me In ">
+                        <Button fx:id="signInBtn" mnemonicParsing="false" onMouseClicked="#onSignInBtnsClicked" text="Sign Me In ">
                            <VBox.margin>
                               <Insets left="200.0" right="200.0" />
                            </VBox.margin>
@@ -64,9 +64,14 @@
                               <Insets bottom="10.0" left="200.0" right="200.0" top="25.0" />
                            </VBox.margin>
                         </PasswordField>
-                        <Button fx:id="loginBtn" mnemonicParsing="false" text="LogIn">
+                        <Button fx:id="loginBtn" mnemonicParsing="false" onMouseClicked="#onLoginBtnClicked" text="LogIn">
                            <VBox.margin>
                               <Insets left="200.0" right="200.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="changeToSignInBtn" mnemonicParsing="false" onMouseClicked="#onSignInBtnsClicked" text="SignIn">
+                           <VBox.margin>
+                              <Insets left="200.0" right="200.0" top="10.0" />
                            </VBox.margin>
                         </Button>
                      </children>
