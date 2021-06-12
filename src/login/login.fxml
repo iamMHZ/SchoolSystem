@@ -69,7 +69,7 @@
                               <Insets left="200.0" right="200.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="changeToSignInBtn" mnemonicParsing="false" onMouseClicked="#onSignInBtnsClicked" text="SignIn">
+                        <Button fx:id="changeToSignInBtn" mnemonicParsing="false" onMouseClicked="#onSignInBtnsClicked" onMouseEntered="#OnMouseEntered" text="SignIn">
                            <VBox.margin>
                               <Insets left="200.0" right="200.0" top="10.0" />
                            </VBox.margin>
