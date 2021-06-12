@@ -4,5 +4,8 @@ module SchoolSystem {
     requires javafx.controls;
     requires javafx.graphics;
 
+    requires AnimateFX;
+
     opens testJavaFX;
+    opens login;
 }

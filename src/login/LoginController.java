@@ -1,5 +1,7 @@
 package login;
 
+import animatefx.animation.FadeIn;
+import animatefx.animation.Shake;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -23,13 +25,30 @@ public class LoginController {
     private Button changeToSignInBtn;
 
     @FXML
+    void OnMouseEntered(MouseEvent event) {
+        if (event.getSource() == changeToSignInBtn) {
+            new Shake(changeToSignInBtn).play();
+
+        }
+
+    }
+
+    @FXML
     void onLoginBtnClicked(MouseEvent event) {
+
 
     }
 
     @FXML
     void onSignInBtnsClicked(MouseEvent event) {
 
+        if (event.getSource() == changeToSignInBtn) {
+            signInPane.toFront();
+            new FadeIn(signInPane).play();
+        }
+
+
     }
+
 
 }
