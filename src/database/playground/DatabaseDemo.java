@@ -35,5 +35,25 @@ public class DatabaseDemo {
         }
 
     }
+    public void selectAll() {
+        String sql = "SELECT * FROM person";
+        Connection conn = null;
+        try {
+            conn = this.connect();
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+
+            // loop through the result set
+            while (rs.next()) {
+                System.out.println(rs.getInt("id") + "\t"
+                        +rs.getString("name")+"\t");
+            }
+            conn.close();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+
 
 }

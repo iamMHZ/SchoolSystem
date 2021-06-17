@@ -7,6 +7,7 @@ public class DatabaseMain {
         DatabaseDemo database = new DatabaseDemo();
 
         database.insert(4,"mahammadhossein");
+        database.selectAll();
     }
 
 }
