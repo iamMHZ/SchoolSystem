@@ -6,9 +6,11 @@ public class DatabaseMain {
 
         DatabaseDemo database = new DatabaseDemo();
 
-        //database.insert(4,"mahammadhossein");
+        //database.delete(5);
+        //database.insert(5,"zahra");
         database.selectAll();
         //database.update(4,"mohammadhossein");
+
     }
 
 }

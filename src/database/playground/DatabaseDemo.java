@@ -81,4 +81,24 @@ public class DatabaseDemo {
         }
     }
 
+    public void delete(int id) {
+        String sql = "DELETE FROM person WHERE id = ?";
+        Connection conn =null;
+
+        try {
+
+            conn = this.connect();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            // set the corresponding param
+            pstmt.setInt(1, id);
+            // execute the delete statement
+            pstmt.executeUpdate();
+            System.out.println("DELETE completed successfully.");
+            conn.close();
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 }
