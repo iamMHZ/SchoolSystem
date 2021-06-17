@@ -19,22 +19,21 @@ public class DatabaseDemo {
         return conn;
     }
 
-
-    public void selectAll() {
-        String sql = "SELECT * FROM test";
-
-        try {
-            Connection conn = this.connect();
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sql);
-
-            // loop through the result set
-            while (rs.next()) {
-                System.out.println(rs.getInt("id") + "\t" );
-            }
+    public void insert(int id,String name) {
+        String sql = "INSERT INTO person(id,name) VALUES(?,?)";
+        Connection conn = null;
+        try  {
+            conn=this.connect();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,id);
+            pstmt.setString(2, name);
+            pstmt.executeUpdate();
+            System.out.println("yes");
+            conn.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
+
     }
 
 }
