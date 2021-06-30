@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -10,77 +11,45 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="734.0" stylesheets="@loginCss.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <AnchorPane fx:id="loginPane" layoutX="102.0" layoutY="14.0" prefHeight="604.0" prefWidth="989.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <BorderPane layoutX="199.0" layoutY="128.0" prefHeight="604.0" prefWidth="989.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <center>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-                     <children>
-                        <TextField fx:id="loginUsername" alignment="CENTER_RIGHT" promptText="نام کاربری">
-                           <VBox.margin>
-                              <Insets bottom="10.0" left="200.0" right="200.0" top="25.0" />
-                           </VBox.margin>
-                        </TextField>
-                        <PasswordField fx:id="loginPassword" alignment="CENTER_RIGHT" promptText="گذرواژه">
-                           <VBox.margin>
-                              <Insets bottom="10.0" left="200.0" right="200.0" top="25.0" />
-                           </VBox.margin>
-                        </PasswordField>
-                        <Button fx:id="loginBtn" mnemonicParsing="false" onMouseClicked="#onLoginBtnClicked" prefHeight="24.0" prefWidth="112.0" text="ورود">
-                           <VBox.margin>
-                              <Insets left="200.0" right="200.0" />
-                           </VBox.margin>
-                        </Button>
-                        <Button fx:id="changeToSignInBtn" mnemonicParsing="false" onMouseClicked="#onSignInBtnsClicked" onMouseEntered="#OnMouseEntered" prefHeight="24.0" prefWidth="111.0" text="ثبت نام">
-                           <VBox.margin>
-                              <Insets left="200.0" right="200.0" top="10.0" />
-                           </VBox.margin>
-                        </Button>
-                     </children>
-                  </VBox>
-               </center>
-            </BorderPane>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="signInPane" prefHeight="604.0" prefWidth="989.0" style="-fx-background-color: #93998F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="signInPane" prefHeight="604.0" prefWidth="989.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <BorderPane layoutX="331.0" layoutY="143.0" prefHeight="604.0" prefWidth="989.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <center>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                      <children>
-                        <TextField fx:id="name" alignment="CENTER_RIGHT" promptText="نام و نام خانوادگی">
+                        <TextField fx:id="name" alignment="CENTER_RIGHT" prefHeight="31.0" promptText="نام و نام خانوادگی">
                            <VBox.margin>
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="nationalId" alignment="CENTER_RIGHT" promptText="کد ملی">
+                        <TextField fx:id="nationalId" alignment="CENTER_RIGHT" prefHeight="31.0" promptText="کد ملی">
                            <VBox.margin>
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
                         </TextField>
-                        <PasswordField fx:id="signInPassword1" alignment="CENTER_RIGHT" promptText="گذرواژه">
+                        <PasswordField fx:id="signInPassword1" alignment="CENTER_RIGHT" prefHeight="31.0" promptText="گذرواژه">
                            <VBox.margin>
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
                         </PasswordField>
-                        <PasswordField fx:id="signInPassword2" alignment="CENTER_RIGHT" promptText="تکرار گذرواژه">
+                        <PasswordField fx:id="signInPassword2" alignment="CENTER_RIGHT" prefHeight="31.0" promptText="تکرار گذرواژه">
                            <VBox.margin>
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
                         </PasswordField>
-                        <TextField fx:id="signInUsername" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="147.0" promptText="نام کاربری">
+                        <TextField fx:id="signInUsername" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="147.0" prefHeight="31.0" promptText="نام کاربری">
                            <VBox.margin>
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="schoolName" alignment="CENTER_RIGHT" promptText="نام مدرسه">
+                        <TextField fx:id="schoolName" alignment="CENTER_RIGHT" prefHeight="31.0" promptText="نام مدرسه">
                            <VBox.margin>
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="courseName" alignment="CENTER_RIGHT" promptText="نام درس">
+                        <TextField fx:id="courseName" alignment="CENTER_RIGHT" prefHeight="31.0" promptText="نام درس">
                            <VBox.margin>
                               <Insets bottom="10.0" left="200.0" right="200.0" top="5.0" />
                            </VBox.margin>
@@ -89,6 +58,9 @@
                            <VBox.margin>
                               <Insets left="200.0" right="200.0" />
                            </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                      </children>
                   </VBox>
@@ -101,8 +73,52 @@
                      <BorderPane.margin>
                         <Insets left="5.0" top="5.0" />
                      </BorderPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
                </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginPane" layoutX="102.0" layoutY="14.0" prefHeight="604.0" prefWidth="989.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane layoutX="199.0" layoutY="128.0" prefHeight="604.0" prefWidth="989.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="loginUsername" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="334.0" promptText="نام کاربری">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="200.0" right="200.0" top="10.0" />
+                           </VBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <PasswordField fx:id="loginPassword" alignment="CENTER_RIGHT" prefHeight="31.0" promptText="گذرواژه">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="200.0" right="200.0" top="10.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <Button fx:id="loginBtn" mnemonicParsing="false" onMouseClicked="#onLoginBtnClicked" prefHeight="24.0" prefWidth="112.0" text="ورود">
+                           <VBox.margin>
+                              <Insets left="200.0" right="200.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="changeToSignInBtn" mnemonicParsing="false" onMouseClicked="#onSignInBtnsClicked" onMouseEntered="#OnMouseEntered" prefHeight="24.0" prefWidth="111.0" text="ثبت نام">
+                           <VBox.margin>
+                              <Insets left="200.0" right="200.0" top="10.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </center>
             </BorderPane>
          </children>
       </AnchorPane>

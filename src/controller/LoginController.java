@@ -56,14 +56,17 @@ public class LoginController {
     @FXML
     void backClicked(MouseEvent event) {
 
+        loginPane.toFront();
+        new FadeIn(loginPane).play();
+
     }
 
     @FXML
     void OnMouseEntered(MouseEvent event) {
-        if (event.getSource() == changeToSignInBtn) {
-            new RubberBand(changeToSignInBtn).play();
-
-        }
+//        if (event.getSource() == changeToSignInBtn) {
+//            new RubberBand(changeToSignInBtn).play();
+//
+//        }
 
     }
 
