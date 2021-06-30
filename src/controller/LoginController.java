@@ -1,6 +1,7 @@
-package login;
+package controller;
 
-import animatefx.animation.*;
+import animatefx.animation.FadeIn;
+import animatefx.animation.RubberBand;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;

@@ -6,6 +6,8 @@ module SchoolSystem {
 
     requires AnimateFX;
 
-    opens testJavaFX;
-    opens login;
+
+
+    opens main;
+    opens controller;
 }
