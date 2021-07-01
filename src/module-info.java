@@ -5,8 +5,14 @@ module SchoolSystem {
     requires javafx.graphics;
     requires java.sql;
     requires sqlite.jdbc;
+    requires AnimateFX;
 
 
-    opens testJavaFX;
+
     opens database.playground;
+
+
+
+    opens main;
+    opens controller;
 }
