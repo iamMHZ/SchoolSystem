@@ -41,7 +41,7 @@ homeworks.
 ### Project Management:
 
 + Docs of the project phasing [coming soon](#)
-+ Docs of the project timing [/documentation/project%20timing/]
++ [Docs of the project timing](documentation/project%20timing/)
 
 ## Developers
 
