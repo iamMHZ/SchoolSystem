@@ -36,7 +36,7 @@ homeworks.
 + Activity Diagram [coming soon](#)
 + [Class Diagram](documentation/class%20diagram/)
 + Sequence Diagram [coming soon](#)
-+ ER Diagram [coming soon](#)
++ [ER Diagram](documentation/ER%20diagram/)
 
 ### Project Management:
 
